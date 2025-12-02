@@ -62,6 +62,11 @@ loadBalancer:
   singleHost: 
     secretName: bold-tls
 
+subApplication:
+  enabled: false
+  # Specify the subpath. The default subpath value is 'boldservices'
+  subPath: 
+  
 instanceConfig:
   - app: id-web
     product: boldid
